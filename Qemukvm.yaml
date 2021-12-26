@@ -1,7 +1,13 @@
 #
-# 最小構成のJenkins
+# 最小構成のメールサーバー
 #
+
+
+# ドメイン名
 domain: labo.local
+
+## クラスタ名
+cluster_name: infra
 
 ## ハイパーバイザーのタイプ指定
 ##  kvm : QEMU+KVM + virsh
@@ -33,7 +39,6 @@ net_dev_default: enp1s0
 net_dev_private: enp2s0
 net_dev_public:  enp3s0
 
-cluster_name: mail
 
 ### Master, Worker, Internal/Frontend Loadbalancer and bootnode
 vm_spec:
